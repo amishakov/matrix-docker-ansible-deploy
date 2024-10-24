@@ -64,7 +64,7 @@ Services that run on the server to make the various parts of your installation w
 | [Let's Encrypt](https://letsencrypt.org/) | ✓ | Free SSL certificate, which secures the connection to all components | [Link](docs/configuring-playbook-ssl-certificates.md) |
 | [ma1sd](https://github.com/ma1uta/ma1sd) | x | Matrix Identity Server | [Link](docs/configuring-playbook-ma1sd.md)
 | [Exim](https://www.exim.org/) | ✓ | Mail server, through which all Matrix services send outgoing email (can be configured to relay through another SMTP server) | [Link](docs/configuring-playbook-email.md) |
-| [Dimension](https://github.com/turt2live/matrix-dimension) | x | An open source integrations manager for Matrix clients | [Link](docs/configuring-playbook-dimension.md) |
+| [Dimension](https://github.com/turt2live/matrix-dimension) | x | An open source integration manager for Matrix clients | [Link](docs/configuring-playbook-dimension.md) |
 | [Sygnal](https://github.com/matrix-org/sygnal) | x | Push gateway | [Link](docs/configuring-playbook-sygnal.md) |
 | [ntfy](https://ntfy.sh) | x | Push notifications server | [Link](docs/configuring-playbook-ntfy.md) |
 
@@ -155,7 +155,7 @@ Services that help you in administrating and monitoring your Matrix installation
 | [synapse-admin](https://github.com/Awesome-Technologies/synapse-admin) | x | A web UI tool for administrating users and rooms on your Matrix server | [Link](docs/configuring-playbook-synapse-admin.md) |
 | Metrics and Graphs | x | Consists of the [Prometheus](https://prometheus.io) time-series database server, the Prometheus [node-exporter](https://prometheus.io/docs/guides/node-exporter/) host metrics exporter, and the [Grafana](https://grafana.com/) web UI | [Link](docs/configuring-playbook-prometheus-grafana.md) |
 | [Borg](https://borgbackup.org) | x | Backups | [Link](docs/configuring-playbook-backup-borg.md) |
-| [Rageshake](https://github.com/matrix-org/rageshake) | x | Bug report server | [Link](docs/configuring-playbook-rageshake.md) |
+| [rageshake](https://github.com/matrix-org/rageshake) | x | Bug report server | [Link](docs/configuring-playbook-rageshake.md) |
 | [synapse-usage-exporter](https://github.com/loelkes/synapse-usage-exporter) | x | Export the usage statistics of a Synapse homeserver to be scraped by Prometheus. | [Link](docs/configuring-playbook-synapse-usage-exporter.md) |
 
 ### Misc

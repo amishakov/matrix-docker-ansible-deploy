@@ -1,7 +1,6 @@
 # Setting up a Generic Mautrix Bridge (optional)
 
-The playbook can install and configure various [mautrix](https://github.com/mautrix) bridges (twitter, facebook, instagram, signal, hangouts, googlechat, etc.), as well as many other (non-mautrix) bridges.
-This is a common guide for configuring mautrix bridges.
+The playbook can install and configure various [mautrix](https://github.com/mautrix) bridges (twitter, facebook, instagram, signal, hangouts, googlechat, etc.), as well as many other (non-mautrix) bridges. This is a common guide for configuring mautrix bridges.
 
 You can see each bridge's features at in the `ROADMAP.md` file in its corresponding [mautrix](https://github.com/mautrix) repository.
 
@@ -123,7 +122,7 @@ If you have issues with a service, and are requesting support, the higher levels
 
 You then need to start a chat with `@SERVICENAMEbot:example.com` (where `example.com` is your base domain, not the `matrix.` domain).
 
-Send `login ` to the bridge bot to get started You can learn more here about authentication from the bridge's official documentation on Authentication https://docs.mau.fi/bridges/python/SERVICENAME/authentication.html  .
+Send `login` to the bridge bot to get started. You can learn more here about authentication from the bridge's official documentation on Authentication: https://docs.mau.fi/bridges/python/SERVICENAME/authentication.html
 
 If you run into trouble, check the [Troubleshooting](#troubleshooting) section below.
 
@@ -132,4 +131,5 @@ If you run into trouble, check the [Troubleshooting](#troubleshooting) section b
 ## Troubleshooting
 
 For troubleshooting information with a specific bridge, please see the playbook documentation about it (some other document in in `docs/`) and the upstream ([mautrix](https://github.com/mautrix)) bridge documentation for that specific bridge.
+
 Reporting bridge bugs should happen upstream, in the corresponding mautrix repository, not to us.

@@ -96,7 +96,7 @@ The problem with a manual installation is:
 - Synapse requires a [Postgres](https://www.postgresql.org/) database (it can run on SQLite, but that's very much discouraged). So you'd need to install Postgres as well.
 - you may also need a reverse-proxy server in front of it (nginx, Apache), so you'd need to be familiar with that
 - SSL is required, so you'd need to obtain Let's Encrypt (or other free or non-free) certificates for one or more domain names. You'd need to be familiar with [certbot](https://certbot.eff.org/) (when using Let's Encrypt) or similar software.
-- for each additional component you'd like to add (client like [Element](https://element.io), bridge to some other chat network, Integration Manager (sitckers, other services), Identity Manager, etc.), you'll need to spend extra time installing and wiring it with the rest of the system in a way that works.
+- for each additional component you'd like to add (client like [Element](https://element.io), bridge to some other chat network, integration manager (stickers, other services, Identity Manager, etc.), you'll need to spend extra time installing and wiring it with the rest of the system in a way that works.
 - you'll likely get slower updates for all of these components, depending on your distro packaging or your own time and ability
 
 The playbook, on the other hand, installs a bunch of components for you by default, obtains SSL certificates for you, etc. If you'd like, you can enable various bridges and other services with very little effort. All the components are wired to work together.
@@ -346,11 +346,9 @@ Refer to both of these for inspiration. Still, as mentioned in [Configuring the 
 
 ### I'd like to adjust some configuration which doesn't have a corresponding variable. How do I do it?
 
-The playbook doesn't aim to expose all configuration settings for all services using variables.
-Doing so would amount to hundreds of variables that we have to create and maintain.
+The playbook doesn't aim to expose all configuration settings for all services using variables. Doing so would amount to hundreds of variables that we have to create and maintain.
 
-Instead, we only try to make some important basics configurable using dedicated variables you can see in each role.
-See [What configuration variables are available?](#what-configuration-variables-are-available).
+Instead, we only try to make some important basics configurable using dedicated variables you can see in each role. See [What configuration variables are available?](#what-configuration-variables-are-available).
 
 Besides that, each role (component) aims to provide a `matrix_SOME_COMPONENT_configuration_extension_yaml` (or `matrix_SOME_COMPONENT_configuration_extension_json`) variable, which can be used to override the configuration.
 

@@ -33,7 +33,7 @@ When you're done with all the configuration you'd like to do, continue with [Ins
 
 ### Additional useful services
 
-- [Setting up the Dimension Integration Manager](configuring-playbook-dimension.md) (optional; [unmaintained](https://github.com/spantaleev/matrix-docker-ansible-deploy/issues/2806#issuecomment-1673559299); after [installing](installing.md))
+- [Setting up the Dimension integration manager](configuring-playbook-dimension.md) (optional; [unmaintained](https://github.com/spantaleev/matrix-docker-ansible-deploy/issues/2806#issuecomment-1673559299); after [installing](installing.md))
 
 - [Setting up the Jitsi video-conferencing platform](configuring-playbook-jitsi.md) (optional)
 
@@ -215,7 +215,7 @@ When you're done with all the configuration you'd like to do, continue with [Ins
 
 ### Backups
 
-- [Setting up borg backup](configuring-playbook-backup-borg.md) - a full Matrix server backup solution, including the Postgres database (optional)
+- [Setting up BorgBackup](configuring-playbook-backup-borg.md) - a full Matrix server backup solution, including the Postgres database (optional)
 
 - [Setting up postgres backup](configuring-playbook-postgres-backup.md) - a Postgres-database backup solution (note: does not include other files) (optional)
 
@@ -224,7 +224,7 @@ When you're done with all the configuration you'd like to do, continue with [Ins
 
 - [Setting up synapse-auto-compressor](configuring-playbook-synapse-auto-compressor.md) for compressing the database on Synapse homeservers (optional)
 
-- [Setting up the Sliding Sync Proxy](configuring-playbook-sliding-sync-proxy.md) for clients which require Sliding Sync support (like Element X) (optional)
+- [Setting up the Sliding Sync proxy](configuring-playbook-sliding-sync-proxy.md) for clients which require Sliding Sync support (like Element X) (optional)
 
 - [Setting up the Sygnal push gateway](configuring-playbook-sygnal.md) (optional)
 
@@ -232,6 +232,6 @@ When you're done with all the configuration you'd like to do, continue with [Ins
 
 - [Setting up a Cactus Comments server](configuring-playbook-cactus-comments.md) - a federated comment system built on Matrix (optional)
 
-- [Setting up the Rageshake bug report server](configuring-playbook-rageshake.md) (optional)
+- [Setting up the rageshake bug report server](configuring-playbook-rageshake.md) (optional)
 
 - [Setting up Prometheus Alertmanager integration via matrix-alertmanager-receiver](configuring-playbook-alertmanager-receiver.md) (optional)

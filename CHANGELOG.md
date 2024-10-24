@@ -870,13 +870,13 @@ See our [Setting up synapse-auto-compressor](docs/configuring-playbook-synapse-a
 
 # 2023-03-07
 
-## Sliding Sync Proxy (Element X) support
+## Sliding Sync proxy (Element X) support
 
 Thanks to [Benjamin Kampmann](https://github.com/gnunicorn) for [getting it started](https://github.com/spantaleev/matrix-docker-ansible-deploy/pull/2515), [FSG-Cat](https://github.com/FSG-Cat) for fixing it up and me ([Slavi](https://github.com/spantaleev)) for polishing it up, the playbook can now install and configure the [sliding-sync proxy](https://github.com/matrix-org/sliding-sync).
 
 The upcoming Element X clients ([Element X iOS](https://github.com/vector-im/element-x-ios) and [Element X Android](https://github.com/vector-im/element-x-android)) require the `sliding-sync` proxy to do their job. **These clients are still in beta** (especially Element X Android, which requires manual compilation to get it working with a non-`matrix.org` homeseserver). Playbook users can now easily give these clients a try and help test them thanks to us having `sliding-sync` support.
 
-To get started, see our [Setting up Sliding Sync Proxy](docs/configuring-playbook-sliding-sync-proxy.md) documentation page.
+To get started, see our [Setting up Sliding Sync proxy](docs/configuring-playbook-sliding-sync-proxy.md) documentation page.
 
 
 # 2023-03-02
@@ -972,11 +972,11 @@ We recommend that you follow the guide for [Fronting the integrated reverse-prox
 
 # 2023-02-25
 
-## Rageshake support
+## rageshake support
 
-Thanks to [Benjamin Kampmann](https://github.com/gnunicorn), the playbook can now install and configure the [Rageshake](https://github.com/matrix-org/rageshake) bug report server.
+Thanks to [Benjamin Kampmann](https://github.com/gnunicorn), the playbook can now install and configure the [rageshake](https://github.com/matrix-org/rageshake) bug report server.
 
-Additional details are available in [Setting up Rageshake](docs/configuring-playbook-rageshake.md).
+Additional details are available in [Setting up rageshake](docs/configuring-playbook-rageshake.md).
 
 
 # 2023-02-17
@@ -1021,9 +1021,9 @@ You need to **update your roles** (`just roles` or `make roles`) regardless of w
 
 **TLDR**: the `matrix-backup-borg` role is now included from another repository. Some variables have been renamed. All functionality remains intact.
 
-Thanks to [moan0s](https://github.com/moan0s), the `matrix-backup-borg` role (which configures [Borg backups](docs/configuring-playbook-backup-borg.md)) has been extracted from the playbook and now lives in its [own repository](https://github.com/mother-of-all-self-hosting/ansible-role-backup_borg). This makes it possible to easily use it in other Ansible playbooks and will become part of [nextcloud-docker-ansible-deploy](https://github.com/spantaleev/nextcloud-docker-ansible-deploy) soon.
+Thanks to [moan0s](https://github.com/moan0s), the `matrix-backup-borg` role (which configures [BorgBackup](docs/configuring-playbook-backup-borg.md)) has been extracted from the playbook and now lives in its [own repository](https://github.com/mother-of-all-self-hosting/ansible-role-backup_borg). This makes it possible to easily use it in other Ansible playbooks and will become part of [nextcloud-docker-ansible-deploy](https://github.com/spantaleev/nextcloud-docker-ansible-deploy) soon.
 
-You need to **update your roles** (`just roles` or `make roles`) regardless of whether you're enabling Borg backup functionality or not. If you're making use of Borg backups via this playbook, you will need to update variable references in your `vars.yml` file (`matrix_backup_borg_` -> `backup_borg_`).
+You need to **update your roles** (`just roles` or `make roles`) regardless of whether you're enabling Borg's backup functionality or not. If you're making use of BorgBackup via this playbook, you will need to update variable references in your `vars.yml` file (`matrix_backup_borg_` -> `backup_borg_`).
 
 
 # 2023-02-12
@@ -1775,11 +1775,11 @@ See our [Setting up matrix-registration-bot](docs/configuring-playbook-bot-matri
 
 # 2022-04-19
 
-## Borg backup support
+## BorgBackup support
 
 Thanks to [Aine](https://gitlab.com/etke.cc) of [etke.cc](https://etke.cc/), the playbook can now set up [Borg](https://www.borgbackup.org/) backups with [borgmatic](https://torsion.org/borgmatic/) of your Matrix server.
 
-See our [Setting up borg backup](docs/configuring-playbook-backup-borg.md) documentation to get started.
+See our [Setting up BorgBackup](docs/configuring-playbook-backup-borg.md) documentation to get started.
 
 
 ## (Compatibility Break) Upgrading to Synapse v1.57 on setups using workers may require manual action
@@ -3197,10 +3197,9 @@ There's a new `matrix_nginx_proxy_data_path` variable, which has a different use
 
 # 2019-03-10
 
-## Dimension Integration Manager support
+## Dimension integration manager support
 
-Thanks to [NullIsNot0](https://github.com/NullIsNot0), the playbook can now (optionally) install the [Dimension](https://dimension.t2bot.io/) Integration Manager.
-To learn more, see the [Setting up Dimension](docs/configuring-playbook-dimension.md) documentation page.
+Thanks to [NullIsNot0](https://github.com/NullIsNot0), the playbook can now (optionally) install the [Dimension](https://dimension.t2bot.io/) integration manager. To learn more, see the [Setting up Dimension](docs/configuring-playbook-dimension.md) documentation page.
 
 
 # 2019-03-07
@@ -3527,7 +3526,7 @@ matrix_riot_web_integrations_widgets_urls: "https://scalar.vector.im/api"
 matrix_riot_web_integrations_jitsi_widget_url: "https://scalar.vector.im/api/widgets/jitsi.html"
 ```
 
-This now allows you use a custom integrations manager like [Dimesion](https://dimension.t2bot.io). For example, if you wish to use the Dimension instance hosted at dimension.t2bot.io, you can set the following in your vars.yml file:
+This now allows you use a custom integration manager like [Dimension](https://dimension.t2bot.io). For example, if you wish to use the Dimension instance hosted at dimension.t2bot.io, you can set the following in your vars.yml file:
 
 ```
 matrix_riot_web_integrations_ui_url: "https://dimension.t2bot.io/riot"
